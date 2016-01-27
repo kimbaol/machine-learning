@@ -42,7 +42,7 @@ function out = output(partId, auxstring)
     out = sprintf('%0.5f ', sim);
   elseif partId == '2'
     load('ex6data3.mat');
-    %[C, sigma] = dataset3Params(X, y, Xval, yval);
+    [C, sigma] = dataset3Params(X, y, Xval, yval);
     out = sprintf('%0.5f ', C);
     out = [out sprintf('%0.5f ', sigma)];
   elseif partId == '3'
